@@ -1,0 +1,2 @@
+docker build -t spring .
+docker run --name spring_container -p 8081:8080 spring

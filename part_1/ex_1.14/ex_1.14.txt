@@ -1,0 +1,2 @@
+docker build -t rails .
+docker run --name rails_container -p 3000:3000 rails

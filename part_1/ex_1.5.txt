@@ -1,0 +1,7 @@
+docker container run -it ubuntu sh -c 'echo "Input website:"; read website; echo "Searching.."; sleep 1; curl http://$website;'
+docker container ls -a
+docker container start 82
+docker exec -it 82 bash
+root@8201432035d5:/# apt update && apt upgrade && apt install curl
+exit
+docker container exec -it 82 sh -c 'echo "Input website:"; read website; echo "Searching.."; sleep 1; curl http://$website;'
